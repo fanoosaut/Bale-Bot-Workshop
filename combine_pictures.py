@@ -10,5 +10,5 @@ def combine(file_name):
 
     background.paste(foreground, (0, 0), foreground)
     background.save("result.jpg")
-    background.show()
+    # background.show()
 
