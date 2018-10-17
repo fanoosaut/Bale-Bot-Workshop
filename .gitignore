@@ -2,3 +2,4 @@ venv/
 .idea/
 *.jpg
 __pycache__/
+template.psd
