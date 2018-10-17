@@ -17,7 +17,7 @@ def final_download_success(result, user_data):
     print("d success : ", result)
     stream = user_data.get("byte_stream", None)
 
-    with open("hello", "wb") as file:
+    with open("hello.jpg", "wb") as file:
         file.write(stream)
         file.close()
 
@@ -61,7 +61,7 @@ def get_photo(bot, update):
                       success_callback=final_download_success,
                       failure_callback=failure)
     logger.info("photo saved ...")
-    combine("hello")
+    combine("hello.jpg")
 
 
 updater.run()
