@@ -54,6 +54,49 @@
 
 				</section>
 
+				<section>
+					<section id="fragments">
+						<h2>Updater</h2>
+						<br><p class="fragment fade-in-then-semi-out">main class of SDK</p>
+						<p class="fragment fade-in-then-semi-out">parameters: token, loop</p>
+						<p class="fragment fade-in-then-semi-out">creates instances of: Bot, Network, Dispatcher</p>
+					</section>
+				</section>
+				
+				<section>
+					<section id="fragments">
+						<h2>Network</h2>
+						<br><p class="fragment fade-in-then-semi-out">recieves updates from server</p>
+						<p class="fragment fade-in-then-semi-out">delievers updates to dispatcher</p>
+						<p class="fragment fade-in-then-semi-out">Dispatcher handles updates with handlers</p>
+					</section>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Handlers</h2>
+						<p class="fragment fade-in-then-semi-out">goto: <a href='http://developers.bale.ai'>developers.bale.ai</a></p>
+						<iframe class="stretch" data-src="http://developers.bale.ai"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Send Message</h2>
+						<br><p>is a method of Bot class</p>
+						<section data-markdown>
+							<script type="text/template">
+								```
+								bot.send_message(user_peer, message, success_callback, failure_callback)
+								```
+							</script>
+						</section>
+						<p class="fragment fade-in-then-semi-out">user_peer = UserPeer(user_id, access_hash)</p>
+						<p class="fragment fade-in-then-semi-out">message:</p>
+						<p class="fragment fade-in-then-semi-out">TextMessage, PhotoMessage, PurchaseMessage</p>
+					</section>
+				</section>
+
 				<section data-markdown>
 					<script type="text/template">
 						## Markdown support
